@@ -25,6 +25,8 @@ release together.
 - Blue Prince installed through Steam.
 - Windows 10 or newer.
 - BepInEx 6 IL2CPP, build `755` or a compatible newer setup.
+- A modded Blue Prince client is fine. You may keep other BepInEx plugins
+    installed; this mod does not require a clean or vanilla game installation.
 - An Archipelago server address, your slot name, and the server password if the
   host configured one.
 
@@ -35,32 +37,57 @@ release together.
     build for this release is
     `BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.755+3fab71a.zip` from the
     [BepInEx build archive](https://builds.bepinex.dev/projects/bepinex_be).
-3. Extract the contents of that archive into the Blue Prince installation
-    directory, usually:
+3. Find the Blue Prince installation directory. In Steam, right-click Blue
+    Prince, select **Manage**, then **Browse local files**. The default Windows
+    path is usually:
 
     ```text
     C:\Program Files (x86)\Steam\steamapps\common\Blue Prince
     ```
 
-4. Start Blue Prince once and wait for BepInEx to finish its first-run setup.
+4. Extract the contents of that archive directly into the Blue Prince
+    installation directory. After extraction, `doorstop_config.ini` and the
+    `BepInEx` folder should be directly under the game folder, not inside an
+    extra folder such as `BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.755`.
+5. Start Blue Prince once and wait for BepInEx to finish its first-run setup.
     Close the game afterward.
 
 ### Install the Blue Prince plugin
 
 1. Download `BluePrinceArchipelago-1.0.3.zip` from this repository's release or
     download location.
-2. Open the archive. Extract all of its contents into:
+2. Open the archive. Extract all of its contents into this exact folder:
 
     ```text
     <Blue Prince>\BepInEx\plugins\BluePrinceArchipelago
     ```
 
-    Create the `BluePrinceArchipelago` folder if it does not exist. Do not put
-    the ZIP itself in the plugins folder and do not nest another copy of the
-    folder inside it.
+    Replace `<Blue Prince>` with the full installation path from the previous
+    step. For example:
+
+    ```text
+    C:\Program Files (x86)\Steam\steamapps\common\Blue Prince\BepInEx\plugins\BluePrinceArchipelago
+    ```
+
+    Create the `BluePrinceArchipelago` folder if it does not exist. If the
+    extracted folder has another name, rename it to exactly
+    `BluePrinceArchipelago` before starting the game. Use that exact folder name
+    for clarity and consistency; it must not be `BluePrinceArchipelago-1.0.3`,
+    `BluePrinceArchipelago-main`, or a second nested
+    `BluePrinceArchipelago` folder.
+
+    Do not put the ZIP itself in the plugins folder. The DLL files must be
+    directly inside the renamed folder, not one level deeper.
 3. The folder should contain `BluePrinceArchipelago.dll`,
     `Archipelago.MultiClient.Net.dll`, `Newtonsoft.Json.dll`, and the `SessionData`
     folder.
+
+If you already use other Blue Prince mods, leave them installed and place this
+plugin beside them in `BepInEx\plugins`. Mod conflicts are possible, especially
+for mods that change room drafting, inventories, saves, or the same user
+interface. If the game crashes or the plugin does not load, temporarily disable
+the other plugins one at a time to identify a conflict; do not delete your
+existing mods or save files while troubleshooting.
 
 ### Connect in-game
 
@@ -140,8 +167,13 @@ the player name after a seed has been generated.
 ## Troubleshooting
 
 **The mod does not appear:** confirm BepInEx was extracted into the game folder,
-then confirm the plugin DLL is directly inside
-`BepInEx\plugins\BluePrinceArchipelago`.
+then confirm the plugin DLL is directly inside the exact path
+`<Blue Prince>\BepInEx\plugins\BluePrinceArchipelago`. If the folder has a
+version suffix or `-main` suffix, rename it to exactly `BluePrinceArchipelago`.
+
+**Another mod causes a crash or missing features:** temporarily disable that
+mod and test again. This Archipelago plugin can coexist with a modded client,
+but two mods that patch the same game systems may conflict.
 
 **The console does not open:** enter a game and press `/`, not `Escape` or the
 Steam overlay shortcut. Check `BepInEx\LogOutput.log` for plugin-loading errors.
