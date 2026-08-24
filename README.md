@@ -22,7 +22,8 @@ release together.
 
 ### Requirements
 
-- Blue Prince installed through Steam.
+- Blue Prince installed on a Windows PC through Steam or the Xbox app/launcher.
+    The Xbox console version is not supported by this PC BepInEx mod.
 - Windows 10 or newer.
 - BepInEx 6 IL2CPP, build `755` or a compatible newer setup.
 - A modded Blue Prince client is fine. You may keep other BepInEx plugins
