@@ -3,3 +3,8 @@
 !blueprince.apworld
 !Players/
 !Players/BluePrince.yaml
+!blueprince-plugin/
+!blueprince-plugin/BluePrinceArchipelago/
+!blueprince-plugin/BluePrinceArchipelago/bin/
+!blueprince-plugin/BluePrinceArchipelago/bin/Release/
+!blueprince-plugin/BluePrinceArchipelago/bin/Release/BluePrinceArchipelago-1.0.1.zip
