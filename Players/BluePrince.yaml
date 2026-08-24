@@ -64,7 +64,8 @@ Blue Prince:
   # extra_starting_key, extra_starting_luck, extra_starting_steps, and nothing.
   # Suffixed variants such as extra_gold_1 or extra_steps_5 are also valid.
   filler_item_distribution:
-    nothing: 100
+    extra_allowance: 50
+    nothing: 50
 
   # Trap weights. Use {} to disable traps. Possible keys include freeze_traps,
   # step_traps, step_traps_1, step_traps_2, step_traps_5, step_traps_set_to_1,
