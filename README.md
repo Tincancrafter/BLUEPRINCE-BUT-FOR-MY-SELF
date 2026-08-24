@@ -33,6 +33,23 @@ release together.
 
 ### Install BepInEx
 
+You can complete this installation with a compatible mod manager instead of
+copying files by hand. Create or select a profile for the **PC version of Blue
+Prince**, install the BepInEx 6 IL2CPP Windows x64 package, and install the
+`BluePrinceArchipelago-1.0.3.zip` plugin package through the manager. If the
+manager asks where to install the plugin, its final location must be:
+
+```text
+<Blue Prince>\BepInEx\plugins\BluePrinceArchipelago
+```
+
+The manager must deploy the plugin DLLs directly into that folder. If it
+creates a versioned folder such as `BluePrinceArchipelago-1.0.3` or a nested
+folder, rename or move the package contents so the final folder is exactly
+`BluePrinceArchipelago`. Use the manager's **Launch** button when starting the
+game so it loads BepInEx and this profile's plugins. The manual steps below are
+provided for managers that do not support importing this ZIP directly.
+
 1. Close Blue Prince.
 2. Download the BepInEx 6 Unity IL2CPP Windows x64 build. The known working
     build for this release is
