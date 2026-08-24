@@ -171,7 +171,56 @@ Prince installation path and the BepInEx/Archipelago dependencies described in
 that project's README. The source world used for development is under
 `archipelago-upstream/worlds/blueprince/`.
 
-## Credits and License
+## Credits and Sources
 
-See the plugin README and `blueprince-plugin/LISCENSE.md` for project credits
-and license information.
+### Project Credits
+
+Thank you to everyone who contributed code, research, art, testing, tooling,
+or advice:
+
+- ChaseoQueso, for the initial item code and custom Archipelago swirl asset.
+- Mac, for work on the mod and AP world.
+- deefdragon and BatemenzDW, for their work on the AP world.
+- Shavnir, for help with the mod.
+- Zygan, for custom art assets.
+- The Silksong and Hollow Knight communities, for modding tools and research
+    that made parts of this project possible.
+
+### Software and Documentation Sources
+
+This project builds on or refers to the following software and resources:
+
+- [Archipelago](https://archipelago.gg/), for the multiworld randomizer,
+    server workflow, world format, and client protocol.
+- [Archipelago MultiClient.Net](https://github.com/ArchipelagoMW/Archipelago),
+    used by the game plugin to connect to Archipelago servers.
+- [BepInEx 6](https://docs.bepinex.dev/), including the
+    [Unity IL2CPP build archive](https://builds.bepinex.dev/projects/bepinex_be),
+    for loading the plugin into Blue Prince.
+- [AssetRipper](https://github.com/AssetRipper/AssetRipper), used during Unity
+    asset and project investigation.
+- [Cinematic Unity Explorer](https://github.com/asd9176506911298/CinematicUnityExplorer),
+    referenced as an optional Unity investigation tool in the plugin documentation.
+- [Unity](https://unity.com/), [Unity Hub](https://unity.com/download), and
+    the Blue Prince game on Steam, as the game and development environment.
+- The [BepInEx NuGet feed](https://nuget.bepinex.dev/v3/index.json) and
+    [Samboy NuGet feed](https://nuget.samboy.dev/v3/index.json), used by the C#
+    development setup.
+
+Links and software versions may change. The version details used for the
+current release are recorded in `blueprince-plugin/BluePrinceArchipelago/BluePrinceArchipelago.csproj`.
+
+### AI Assistance Disclosure
+
+[GitHub Copilot](https://github.com/features/copilot), an AI coding assistant,
+was used to help organize and expand this README, inspect the repository,
+draft installation and troubleshooting instructions, and validate the Git
+ignore configuration. The project authors remain responsible for reviewing,
+testing, and correcting all generated or suggested content. AI assistance does
+not replace credit for the human contributors or the upstream projects listed
+above.
+
+## License
+
+See `blueprince-plugin/LISCENSE.md` for the project license and copyright
+information.
