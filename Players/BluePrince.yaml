@@ -1,0 +1,91 @@
+# Player/slot name. This must match the name used by the game client.
+name: BluePrince
+
+# The Archipelago game world selected by this file.
+game: Blue Prince
+
+Blue Prince:
+  # Victory condition. Options: antechamber, room46, sanctum, ascend, blueprints.
+  goal_type: room46
+
+  # Number of sanctums required when goal_type is sanctum. Range: 1-8.
+  goal_sanctum_solves: 8
+
+  # Put drafted rooms into the item pool. Options: true or false.
+  room_draft_sanity: true
+
+  # Number of random starting rooms when room_draft_sanity is true. Range: 2-10.
+  starting_room_amount: 2
+
+  # Default locked-trunk checks per room by trunk type. Range for each: 0-100.
+  locked_trunks_common: 2
+  locked_trunks_rare: 0
+  locked_trunks_complex: 0
+
+  # Optional per-room overrides. Each value is the number of checks for that room,
+  # from 0-100. Valid rooms include: Great Hall, Bedroom, Den, Veranda, The Pool,
+  # Drawing Room, Entrance Hall, Courtyard, Office, Dormitory, Servant's Quarters,
+  # Secret Passage, Foyer, Wine Cellar, Laboratory, Morning Room, Terrace, Gallery,
+  # Vault, Observatory, Hovel, Planetarium, Library, Attic, Conservatory, Study,
+  # Music Room, Nook, Trophy Room, Pump Room, Tunnel, Root Cellar, Mechanarium,
+  # Weight Room, Storeroom, and Bunk Room.
+  trunks:
+    Great Hall: 5
+    Bedroom: 2
+    Den: 2
+    Veranda: 2
+    The Pool: 2
+    Drawing Room: 0
+
+  # Randomize ordinary item pickups. Options: true or false.
+  standard_item_sanity: true
+
+  # Randomize items made in the Workshop. Options: true or false.
+  workshop_sanity: true
+
+  # Randomize upgrade disk pickups. Options: true or false.
+  upgrade_disk_sanity: true
+
+  # Randomize special key pickups. Options: true or false.
+  key_sanity: true
+
+  # Randomize Armory and Showroom purchases. Options: true or false.
+  special_shop_sanity: false
+
+  # Add trophy checks. Options: true or false.
+  trophy_sanity: false
+
+  # Item logic difficulty. Options: default, rare, complex, rare_complex, extreme.
+  item_logic_mode: default
+
+  # Filler item weights. Set a key to 0-100; higher values make it more likely.
+  # Possible keys include: extra_allowance, extra_gold, extra_dice, extra_gems,
+  # extra_keys, extra_stars, extra_steps, extra_starting_dice, extra_starting_gems,
+  # extra_starting_key, extra_starting_luck, extra_starting_steps, and nothing.
+  # Suffixed variants such as extra_gold_1 or extra_steps_5 are also valid.
+  filler_item_distribution:
+    nothing: 100
+
+  # Trap weights. Use {} to disable traps. Possible keys include freeze_traps,
+  # step_traps, step_traps_1, step_traps_2, step_traps_5, step_traps_set_to_1,
+  # step_traps_set_to_10, item_traps, star_traps, star_traps_1, star_traps_2,
+  # star_traps_5, and eod_traps. Each value is 0-100.
+  trap_type_distribution: {}
+
+  # Percentage of filler placements that become traps. Range: 0-100.
+  trap_percentage: 0
+
+  # Death Link trigger. Options: none, eod, bedroom, steps.
+  death_link_type: none
+
+  # Matching Death Link events ignored before one is sent. Range: 0-100.
+  death_link_grace: 0
+
+  # Death Links blocked before one affects this player. Range: 0-100.
+  death_link_protection: 1
+
+  # Ignore Death Link while Blessing Of The Monk is active. Options: true or false.
+  death_link_monk_exception: true
+
+  # Items granted immediately at the start. Use {} or item names with quantities.
+  start_inventory: {}
