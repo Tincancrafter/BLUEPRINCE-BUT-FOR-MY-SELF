@@ -1,5 +1,11 @@
 # Red Prince Archipelago
 
+## Project Repositories
+
+- **[Releases and Setup](https://github.com/Tincancrafter/Red-Prince-Releases)** (you are here)
+- [APWorld Source](https://github.com/Tincancrafter/Red-Prince-APWorld)
+- [Game Mod Source](https://github.com/Tincancrafter/Red-Prince-Game-Mod)
+
 This project adds Archipelago randomizer support to the Steam version of Blue
 Prince. The game mod connects directly to an Archipelago server, sends checks
 when the player finds randomized rewards, and applies received rooms, items,
