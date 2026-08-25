@@ -1,14 +1,5 @@
 *
 !.gitignore
+!.gitattributes
 !README.md
 !LICENSE
-log.txt
-!redprince.apworld
-!RedPrince.yaml
-!Players/
-!RedPrinceArchipelago-1.0.3.zip
-!redprince-plugin/
-!redprince-plugin/RedPrinceArchipelago/
-!redprince-plugin/RedPrinceArchipelago/bin/
-!redprince-plugin/RedPrinceArchipelago/bin/Release/
-!redprince-plugin/RedPrinceArchipelago/bin/Release/RedPrinceArchipelago-1.0.3.zip

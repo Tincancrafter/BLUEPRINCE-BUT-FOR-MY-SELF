@@ -5,7 +5,8 @@ Prince. The game mod connects directly to an Archipelago server, sends checks
 when the player finds randomized rewards, and applies received rooms, items,
 upgrades, and effects in-game.
 
-This repository includes ready-to-use downloads for both sides of a game:
+Ready-to-use downloads for both sides of a game are published on this
+repository's [Releases page](https://github.com/Tincancrafter/Red-Prince-Releases/releases):
 
 | File | Use |
 | --- | --- |
@@ -133,9 +134,7 @@ The host needs an Archipelago installation that supports custom `.apworld`
 files. A normal Archipelago release or a hosting provider that explicitly
 allows custom worlds is required.
 
-1. Use the `redprince.apworld` and `RedPrince.yaml` files included in
-    this repository. If you downloaded a release archive, extract those two
-    files into a temporary folder first.
+1. Download `redprince.apworld` and `RedPrince.yaml` from the same release.
 
 2. Install the world by copying `redprince.apworld` into the `custom_worlds`
     folder of the Archipelago installation. If the host uses a web service,
@@ -202,19 +201,14 @@ use the in-game `/help` command to see available client commands.
 supported by every Archipelago host. Use a host that advertises custom-world
 support or run the Archipelago server locally.
 
-## Development
+## Source Repositories
 
-The Python module in `redprince_functions.py` is a dependency-free rules layer
-used to exercise the world logic. Run its tests with:
-
-```text
-python -m unittest -v
-```
-
-The C# project is under `redprince-plugin/`. Building it requires the Blue
-Prince installation path and the BepInEx/Archipelago dependencies described in
-that project's README. The source world used for development is under
-`archipelago-upstream/worlds/redprince/`.
+- [Red-Prince-APWorld](https://github.com/Tincancrafter/Red-Prince-APWorld)
+    contains the Archipelago Python world, tests, and world documentation.
+- [Red-Prince-Game-Mod](https://github.com/Tincancrafter/Red-Prince-Game-Mod)
+    contains the BepInEx C# plugin, assets, solution, and build documentation.
+- This repository contains player-facing installation and hosting documentation.
+    Compiled game files are attached to releases rather than committed to the branch.
 
 ## Credits and Sources
 
@@ -262,7 +256,8 @@ This project builds on or refers to the following software and resources:
     development setup.
 
 Links and software versions may change. The version details used for the
-current release are recorded in `redprince-plugin/RedPrinceArchipelago/RedPrinceArchipelago.csproj`.
+current release are recorded in the
+[game-mod project file](https://github.com/Tincancrafter/Red-Prince-Game-Mod/blob/main/RedPrinceArchipelago/RedPrinceArchipelago.csproj).
 
 ### AI Assistance Disclosure
 
