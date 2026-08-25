@@ -227,14 +227,17 @@ Thank you to everyone who contributed code, research, art, documentation,
 testing, tooling, packaging, or advice:
 
 - [Yascob99](https://github.com/Yascob99), repository owner and lead developer
-    of the Blue Prince game mod.
-- [BatmenzDW](https://github.com/BatmenzDW), primary APWorld author and a major
-    contributor to the game mod.
-- [deefdragon](https://github.com/deefdragon), for APWorld development, logic,
-    and integration work.
-- [shavnir](https://github.com/shavnir), for game-mod code, build tooling,
-    item/list handling, and installation documentation.
-- [Rooby-Roo](https://github.com/Rooby-Roo), for documentation contributions.
+    of the [original Blue Prince game mod](https://github.com/Yascob99/BluePrinceArchipelago).
+- [BatmenzDW](https://github.com/BatmenzDW), primary author of the
+    [APWorld source](https://github.com/BatmenzDW/Archipelago/tree/main/worlds/blueprince)
+    and a major contributor to the original game mod.
+- [deefdragon](https://github.com/deefdragon), for
+    [APWorld development, logic, and integration work](https://github.com/deefdragon/Archipelago/tree/main/worlds/blueprince).
+- [shavnir](https://github.com/shavnir), for code, build tooling, item/list
+    handling, and installation documentation in the
+    [original game-mod repository](https://github.com/Yascob99/BluePrinceArchipelago).
+- [Rooby-Roo](https://github.com/Rooby-Roo), for documentation contributions to
+    the [original game-mod repository](https://github.com/Yascob99/BluePrinceArchipelago).
 - ChaseoQueso, for the initial item code and custom Archipelago swirl asset.
 - Mac, for work on the mod and APWorld.
 - Zygan, for custom art assets.
