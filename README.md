@@ -26,7 +26,7 @@ repository's [Releases page](https://github.com/Tincancrafter/Red-Prince-Release
 
 | File | Use |
 | --- | --- |
-| `RedPrinceArchipelago-1.0.3.zip` | Install the BepInEx game plugin. Every player needs this. |
+| `RedPrinceArchipelago.zip` | Install the BepInEx game plugin. Every player needs this. |
 | [`redprince.apworld`](https://github.com/Tincancrafter/Red-Prince-APWorld/releases) | The custom Archipelago world, published from its source repository. |
 | `RedPrince.yaml` | Player settings used to generate a seed. |
 
@@ -52,19 +52,18 @@ release together.
 You can complete this installation with a compatible mod manager instead of
 copying files by hand. Create or select a profile for the **PC version of Blue
 Prince**, install the BepInEx 6 IL2CPP Windows x64 package, and install the
-`RedPrinceArchipelago-1.0.3.zip` plugin package through the manager. If the
+`RedPrinceArchipelago.zip` plugin package through the manager. If the
 manager asks where to install the plugin, its final location must be:
 
 ```text
 <Blue Prince>\BepInEx\plugins\RedPrinceArchipelago
 ```
 
-The manager must deploy the plugin DLLs directly into that folder. If it
-creates a versioned folder such as `RedPrinceArchipelago-1.0.3` or a nested
-folder, rename or move the package contents so the final folder is exactly
-`RedPrinceArchipelago`. Use the manager's **Launch** button when starting the
-game so it loads BepInEx and this profile's plugins. The manual steps below are
-provided for managers that do not support importing this ZIP directly.
+The package name already matches the required plugin folder, so no renaming is
+needed. The manager must deploy the plugin DLLs directly into that folder. Use
+the manager's **Launch** button when starting the game so it loads BepInEx and
+this profile's plugins. The manual steps below are provided for managers that
+do not support importing this ZIP directly.
 
 1. Close Blue Prince.
 2. Download the BepInEx 6 Unity IL2CPP Windows x64 build. The known working
@@ -88,7 +87,7 @@ provided for managers that do not support importing this ZIP directly.
 
 ### Install the Red Prince Archipelago plugin
 
-1. Download `RedPrinceArchipelago-1.0.3.zip` from this repository's release or
+1. Download `RedPrinceArchipelago.zip` from this repository's release or
     download location.
 2. Open the archive. Extract all of its contents into this exact folder:
 
@@ -103,18 +102,13 @@ provided for managers that do not support importing this ZIP directly.
     C:\Program Files (x86)\Steam\steamapps\common\Blue Prince\BepInEx\plugins\RedPrinceArchipelago
     ```
 
-    Create the `RedPrinceArchipelago` folder if it does not exist. If the
-    extracted folder has another name, rename it to exactly
-    `RedPrinceArchipelago` before starting the game. Use that exact folder name
-    for clarity and consistency; it must not be `RedPrinceArchipelago-1.0.3`,
-    `RedPrinceArchipelago-main`, or a second nested
-    `RedPrinceArchipelago` folder.
+    Create the `RedPrinceArchipelago` folder if it does not exist.
 
     Do not put the ZIP itself in the plugins folder. The DLL files must be
-    directly inside the renamed folder, not one level deeper.
+    directly inside that folder, not one level deeper.
 3. The folder should contain `RedPrinceArchipelago.dll`,
-    `Archipelago.MultiClient.Net.dll`, `Newtonsoft.Json.dll`, and the `SessionData`
-    folder.
+    `Archipelago.MultiClient.Net.dll`, and `Newtonsoft.Json.dll`. The plugin
+    creates its `SessionData` folder on first launch.
 
 If you already use other Blue Prince mods, leave them installed and place this
 plugin beside them in `BepInEx\plugins`. Mod conflicts are possible, especially
@@ -198,8 +192,7 @@ the player name after a seed has been generated.
 
 **The mod does not appear:** confirm BepInEx was extracted into the game folder,
 then confirm the plugin DLL is directly inside the exact path
-`<Blue Prince>\BepInEx\plugins\RedPrinceArchipelago`. If the folder has a
-version suffix or `-main` suffix, rename it to exactly `RedPrinceArchipelago`.
+`<Blue Prince>\BepInEx\plugins\RedPrinceArchipelago`.
 
 **Another mod causes a crash or missing features:** temporarily disable that
 mod and test again. This Archipelago plugin can coexist with a modded client,
@@ -268,8 +261,9 @@ This project builds on or refers to the following software and resources:
     [Samboy NuGet feed](https://nuget.samboy.dev/v3/index.json), used by the C#
     development setup.
 
-Links and software versions may change. The version details used for the
-current release are recorded in the
+Links and software versions may change. Release titles and tags identify the
+published version; distributable filenames remain stable so installation never
+requires renaming. The plugin's version details are also recorded in the
 [game-mod project file](https://github.com/Tincancrafter/Red-Prince-Game-Mod/blob/main/RedPrinceArchipelago/RedPrinceArchipelago.csproj).
 
 ## License
