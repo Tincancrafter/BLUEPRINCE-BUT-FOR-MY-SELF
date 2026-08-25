@@ -228,9 +228,10 @@ testing, tooling, packaging, or advice:
 
 - [Yascob99](https://github.com/Yascob99), repository owner and lead developer
     of the [Yascob99/BluePrinceArchipelago](https://github.com/Yascob99/BluePrinceArchipelago).
-- [BatmenzDW](https://github.com/BatmenzDW), primary author of the
-    [APWorld source](https://github.com/BatmenzDW/Archipelago/tree/main/worlds/blueprince)
-    and a major contributor to the original game mod.
+- [BatmenzDW (Joshua Carter)](https://github.com/BatmenzDW), primary author of
+    [BatmenzDW/Archipelago](https://github.com/BatmenzDW/Archipelago/tree/main/worlds/blueprince)
+    and a major contributor to
+    [Yascob99/BluePrinceArchipelago](https://github.com/Yascob99/BluePrinceArchipelago).
 - [deefdragon](https://github.com/deefdragon), for
     [APWorld development, logic, and integration work](https://github.com/deefdragon/Archipelago/tree/main/worlds/blueprince).
 - [shavnir](https://github.com/shavnir), for code, build tooling, item/list
