@@ -1,4 +1,4 @@
-# Blue Prince Archipelago
+# Red Prince Archipelago
 
 This project adds Archipelago randomizer support to the Steam version of Blue
 Prince. The game mod connects directly to an Archipelago server, sends checks
@@ -9,9 +9,9 @@ This repository includes ready-to-use downloads for both sides of a game:
 
 | File | Use |
 | --- | --- |
-| `BluePrinceArchipelago-1.0.3.zip` | Install the BepInEx game plugin. Every player needs this. |
-| `blueprince.apworld` | The custom Archipelago world, for hosts using an existing Archipelago install. |
-| `BluePrince.yaml` | Player settings used to generate a seed. |
+| `RedPrinceArchipelago-1.0.3.zip` | Install the BepInEx game plugin. Every player needs this. |
+| `redprince.apworld` | The custom Archipelago world, for hosts using an existing Archipelago install. |
+| `RedPrince.yaml` | Player settings used to generate a seed. |
 
 The mod is currently intended for Windows and the Steam release of Blue
 Prince. Keep the plugin version, AP world, and generated seed from the same
@@ -35,17 +35,17 @@ release together.
 You can complete this installation with a compatible mod manager instead of
 copying files by hand. Create or select a profile for the **PC version of Blue
 Prince**, install the BepInEx 6 IL2CPP Windows x64 package, and install the
-`BluePrinceArchipelago-1.0.3.zip` plugin package through the manager. If the
+`RedPrinceArchipelago-1.0.3.zip` plugin package through the manager. If the
 manager asks where to install the plugin, its final location must be:
 
 ```text
-<Blue Prince>\BepInEx\plugins\BluePrinceArchipelago
+<Blue Prince>\BepInEx\plugins\RedPrinceArchipelago
 ```
 
 The manager must deploy the plugin DLLs directly into that folder. If it
-creates a versioned folder such as `BluePrinceArchipelago-1.0.3` or a nested
+creates a versioned folder such as `RedPrinceArchipelago-1.0.3` or a nested
 folder, rename or move the package contents so the final folder is exactly
-`BluePrinceArchipelago`. Use the manager's **Launch** button when starting the
+`RedPrinceArchipelago`. Use the manager's **Launch** button when starting the
 game so it loads BepInEx and this profile's plugins. The manual steps below are
 provided for managers that do not support importing this ZIP directly.
 
@@ -69,33 +69,33 @@ provided for managers that do not support importing this ZIP directly.
 5. Start Blue Prince once and wait for BepInEx to finish its first-run setup.
     Close the game afterward.
 
-### Install the Blue Prince plugin
+### Install the Red Prince Archipelago plugin
 
-1. Download `BluePrinceArchipelago-1.0.3.zip` from this repository's release or
+1. Download `RedPrinceArchipelago-1.0.3.zip` from this repository's release or
     download location.
 2. Open the archive. Extract all of its contents into this exact folder:
 
     ```text
-    <Blue Prince>\BepInEx\plugins\BluePrinceArchipelago
+    <Blue Prince>\BepInEx\plugins\RedPrinceArchipelago
     ```
 
     Replace `<Blue Prince>` with the full installation path from the previous
     step. For example:
 
     ```text
-    C:\Program Files (x86)\Steam\steamapps\common\Blue Prince\BepInEx\plugins\BluePrinceArchipelago
+    C:\Program Files (x86)\Steam\steamapps\common\Blue Prince\BepInEx\plugins\RedPrinceArchipelago
     ```
 
-    Create the `BluePrinceArchipelago` folder if it does not exist. If the
+    Create the `RedPrinceArchipelago` folder if it does not exist. If the
     extracted folder has another name, rename it to exactly
-    `BluePrinceArchipelago` before starting the game. Use that exact folder name
-    for clarity and consistency; it must not be `BluePrinceArchipelago-1.0.3`,
-    `BluePrinceArchipelago-main`, or a second nested
-    `BluePrinceArchipelago` folder.
+    `RedPrinceArchipelago` before starting the game. Use that exact folder name
+    for clarity and consistency; it must not be `RedPrinceArchipelago-1.0.3`,
+    `RedPrinceArchipelago-main`, or a second nested
+    `RedPrinceArchipelago` folder.
 
     Do not put the ZIP itself in the plugins folder. The DLL files must be
     directly inside the renamed folder, not one level deeper.
-3. The folder should contain `BluePrinceArchipelago.dll`,
+3. The folder should contain `RedPrinceArchipelago.dll`,
     `Archipelago.MultiClient.Net.dll`, `Newtonsoft.Json.dll`, and the `SessionData`
     folder.
 
@@ -115,14 +115,14 @@ existing mods or save files while troubleshooting.
 
     - **Host:** the address supplied by the host, such as `archipelago.gg:12345`
     - **Player Name:** the exact slot name from the generated YAML, usually
-      `BluePrince`
+      `RedPrince`
     - **Password:** the server password, or leave it empty if there is none
 
 4. Select **Connect**. A successful connection shows `Status: Connected`.
 5. Keep the console available when troubleshooting. It displays Archipelago
     messages, received items, and connection errors.
 
-The game client logs in as the Archipelago game `Blue Prince`. A login failure
+The game client logs in as the Archipelago game `Red Prince`. A login failure
 usually means the host is using a different game name, the slot name is not an
 exact match, the password is wrong, or the client and server do not agree on
 the installed world/version.
@@ -133,14 +133,14 @@ The host needs an Archipelago installation that supports custom `.apworld`
 files. A normal Archipelago release or a hosting provider that explicitly
 allows custom worlds is required.
 
-1. Use the `blueprince.apworld` and `BluePrince.yaml` files included in
+1. Use the `redprince.apworld` and `RedPrince.yaml` files included in
     this repository. If you downloaded a release archive, extract those two
     files into a temporary folder first.
 
-2. Install the world by copying `blueprince.apworld` into the `custom_worlds`
+2. Install the world by copying `redprince.apworld` into the `custom_worlds`
     folder of the Archipelago installation. If the host uses a web service,
     upload the `.apworld` through that service's custom-world workflow instead.
-3. Copy `BluePrince.yaml` into the host's `Players` folder.
+3. Copy `RedPrince.yaml` into the host's `Players` folder.
 4. Edit the YAML before generating if you want different settings. The player
     name must remain the same name that the player enters in-game.
 5. Generate the seed with Archipelago's normal Generate/Launcher workflow and
@@ -152,8 +152,8 @@ allows custom worlds is required.
 
 For a single-player test, the supplied YAML is already configured with:
 
-- Game: `Blue Prince`
-- Slot name: `BluePrince`
+- Game: `Red Prince`
+- Slot name: `RedPrince`
 - Goal: `room46`
 - Room drafting, standard items, workshop items, upgrade disks, and keys
   randomized
@@ -161,7 +161,7 @@ For a single-player test, the supplied YAML is already configured with:
 
 ## YAML Options
 
-The main settings in `BluePrince.yaml` are:
+The main settings in `RedPrince.yaml` are:
 
 - `goal_type`: `antechamber`, `room46`, `sanctum`, `ascend`, or `blueprints`.
 - `goal_sanctum_solves`: required Sanctum solves when using the `sanctum` goal,
@@ -181,8 +181,8 @@ the player name after a seed has been generated.
 
 **The mod does not appear:** confirm BepInEx was extracted into the game folder,
 then confirm the plugin DLL is directly inside the exact path
-`<Blue Prince>\BepInEx\plugins\BluePrinceArchipelago`. If the folder has a
-version suffix or `-main` suffix, rename it to exactly `BluePrinceArchipelago`.
+`<Blue Prince>\BepInEx\plugins\RedPrinceArchipelago`. If the folder has a
+version suffix or `-main` suffix, rename it to exactly `RedPrinceArchipelago`.
 
 **Another mod causes a crash or missing features:** temporarily disable that
 mod and test again. This Archipelago plugin can coexist with a modded client,
@@ -192,7 +192,7 @@ but two mods that patch the same game systems may conflict.
 Steam overlay shortcut. Check `BepInEx\LogOutput.log` for plugin-loading errors.
 
 **Login fails:** check the host address and password, use the exact YAML slot
-name, and confirm the host installed the same `blueprince.apworld` release.
+name, and confirm the host installed the same `redprince.apworld` release.
 
 **Items or checks are missing:** stop the run and verify that the plugin and
 world were not mixed between releases. Reconnect to the original server and
@@ -204,17 +204,17 @@ support or run the Archipelago server locally.
 
 ## Development
 
-The Python module in `blueprince_functions.py` is a dependency-free rules layer
+The Python module in `redprince_functions.py` is a dependency-free rules layer
 used to exercise the world logic. Run its tests with:
 
 ```text
 python -m unittest -v
 ```
 
-The C# project is under `blueprince-plugin/`. Building it requires the Blue
+The C# project is under `redprince-plugin/`. Building it requires the Blue
 Prince installation path and the BepInEx/Archipelago dependencies described in
 that project's README. The source world used for development is under
-`archipelago-upstream/worlds/blueprince/`.
+`archipelago-upstream/worlds/redprince/`.
 
 ## Credits and Sources
 
@@ -262,7 +262,7 @@ This project builds on or refers to the following software and resources:
     development setup.
 
 Links and software versions may change. The version details used for the
-current release are recorded in `blueprince-plugin/BluePrinceArchipelago/BluePrinceArchipelago.csproj`.
+current release are recorded in `redprince-plugin/RedPrinceArchipelago/RedPrinceArchipelago.csproj`.
 
 ### AI Assistance Disclosure
 

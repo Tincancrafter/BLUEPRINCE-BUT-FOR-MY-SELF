@@ -1,10 +1,10 @@
 # Player/slot name. This must match the name used by the game client.
-name: BluePrince
+name: RedPrince
 
-# The Archipelago game world selected by this file.
-game: Blue Prince
+# Archipelago game world selected by this file.
+game: Red Prince
 
-Blue Prince:
+Red Prince:
   # Victory condition. Options: antechamber, room46, sanctum, ascend, blueprints.
   goal_type: room46
 
@@ -13,6 +13,10 @@ Blue Prince:
 
   # Put drafted rooms into the item pool. Options: true or false.
   room_draft_sanity: true
+
+  # Apply received-room logic to the Outer Room draft. If no received Outer
+  # Rooms are available, the draft is filled with Closets.
+  outer_room_draft_sanity: true
 
   # Number of random starting rooms when room_draft_sanity is true. Range: 1-10.
   starting_room_amount: 2
@@ -65,6 +69,7 @@ Blue Prince:
   # Suffixed variants such as extra_gold_1 or extra_steps_5 are also valid.
   filler_item_distribution:
     extra_allowance: 50
+    extra_stars: 25
     nothing: 50
 
   # Trap weights. Use {} to disable traps. Possible keys include freeze_traps,
