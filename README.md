@@ -220,14 +220,25 @@ that project's README. The source world used for development is under
 
 ### Project Credits
 
-Thank you to everyone who contributed code, research, art, testing, tooling,
-or advice:
+Thank you to everyone who contributed code, research, art, documentation,
+testing, tooling, packaging, or advice:
 
+- [Yascob99](https://github.com/Yascob99), repository owner and lead developer
+    of the Blue Prince game mod.
+- [BatmenzDW](https://github.com/BatmenzDW), primary APWorld author and a major
+    contributor to the game mod.
+- [deefdragon](https://github.com/deefdragon), for APWorld development, logic,
+    and integration work.
+- [shavnir](https://github.com/shavnir), for game-mod code, build tooling,
+    item/list handling, and installation documentation.
+- [Rooby-Roo](https://github.com/Rooby-Roo), for documentation contributions.
+- [Tincancrafter](https://github.com/Tincancrafter), for release maintenance,
+    packaging, distribution documentation, and integration fixes.
 - ChaseoQueso, for the initial item code and custom Archipelago swirl asset.
-- Mac, for work on the mod and AP world.
-- deefdragon and BatemenzDW, for their work on the AP world.
-- Shavnir, for help with the mod.
+- Mac, for work on the mod and APWorld.
 - Zygan, for custom art assets.
+- [Emmet-is-a-Birb](https://github.com/Emmet-is-a-Birb), author of the related
+    standalone [Blue Prince Manual integration](https://github.com/Emmet-is-a-Birb/BluePrince_Manual).
 - The Silksong and Hollow Knight communities, for modding tools and research
     that made parts of this project possible.
 
