@@ -17,7 +17,7 @@ repository's [Releases page](https://github.com/Tincancrafter/Red-Prince-Release
 | File | Use |
 | --- | --- |
 | `RedPrinceArchipelago-1.0.3.zip` | Install the BepInEx game plugin. Every player needs this. |
-| `redprince.apworld` | The custom Archipelago world, for hosts using an existing Archipelago install. |
+| [`redprince.apworld`](https://github.com/Tincancrafter/Red-Prince-APWorld/releases) | The custom Archipelago world, published from its source repository. |
 | `RedPrince.yaml` | Player settings used to generate a seed. |
 
 The mod is currently intended for Windows and the Steam release of Blue
@@ -140,7 +140,9 @@ The host needs an Archipelago installation that supports custom `.apworld`
 files. A normal Archipelago release or a hosting provider that explicitly
 allows custom worlds is required.
 
-1. Download `redprince.apworld` and `RedPrince.yaml` from the same release.
+1. Download `redprince.apworld` from the matching version on the
+    [APWorld Releases page](https://github.com/Tincancrafter/Red-Prince-APWorld/releases),
+    then download `RedPrince.yaml` from this repository's matching release.
 
 2. Install the world by copying `redprince.apworld` into the `custom_worlds`
     folder of the Archipelago installation. If the host uses a web service,
