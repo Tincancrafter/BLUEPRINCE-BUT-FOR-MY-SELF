@@ -11,7 +11,7 @@ This repository includes ready-to-use downloads for both sides of a game:
 | --- | --- |
 | `BluePrinceArchipelago-1.0.3.zip` | Install the BepInEx game plugin. Every player needs this. |
 | `blueprince.apworld` | The custom Archipelago world, for hosts using an existing Archipelago install. |
-| `Players/BluePrince.yaml` | Player settings used to generate a seed. |
+| `BluePrince.yaml` | Player settings used to generate a seed. |
 
 The mod is currently intended for Windows and the Steam release of Blue
 Prince. Keep the plugin version, AP world, and generated seed from the same
@@ -133,14 +133,14 @@ The host needs an Archipelago installation that supports custom `.apworld`
 files. A normal Archipelago release or a hosting provider that explicitly
 allows custom worlds is required.
 
-1. Use the `blueprince.apworld` and `Players/BluePrince.yaml` files included in
+1. Use the `blueprince.apworld` and `BluePrince.yaml` files included in
     this repository. If you downloaded a release archive, extract those two
     files into a temporary folder first.
 
 2. Install the world by copying `blueprince.apworld` into the `custom_worlds`
     folder of the Archipelago installation. If the host uses a web service,
     upload the `.apworld` through that service's custom-world workflow instead.
-3. Copy `Players/BluePrince.yaml` into the host's `Players` folder.
+3. Copy `BluePrince.yaml` into the host's `Players` folder.
 4. Edit the YAML before generating if you want different settings. The player
     name must remain the same name that the player enters in-game.
 5. Generate the seed with Archipelago's normal Generate/Launcher workflow and
@@ -161,7 +161,7 @@ For a single-player test, the supplied YAML is already configured with:
 
 ## YAML Options
 
-The main settings in `Players/BluePrince.yaml` are:
+The main settings in `BluePrince.yaml` are:
 
 - `goal_type`: `antechamber`, `room46`, `sanctum`, `ascend`, or `blueprints`.
 - `goal_sanctum_solves`: required Sanctum solves when using the `sanctum` goal,
