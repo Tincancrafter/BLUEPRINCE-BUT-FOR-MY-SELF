@@ -1,6 +1,7 @@
 *
 !.gitignore
 !README.md
+log.txt
 !blueprince.apworld
 !BluePrince.yaml
 !Players/
