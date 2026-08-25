@@ -209,15 +209,6 @@ use the in-game `/help` command to see available client commands.
 supported by every Archipelago host. Use a host that advertises custom-world
 support or run the Archipelago server locally.
 
-## Source Repositories
-
-- [Red-Prince-APWorld](https://github.com/Tincancrafter/Red-Prince-APWorld)
-    contains the Archipelago Python world, tests, and world documentation.
-- [Red-Prince-Game-Mod](https://github.com/Tincancrafter/Red-Prince-Game-Mod)
-    contains the BepInEx C# plugin, assets, solution, and build documentation.
-- This repository contains player-facing installation and hosting documentation.
-    Compiled game files are attached to releases rather than committed to the branch.
-
 ## Credits and Sources
 
 ### Project Credits
