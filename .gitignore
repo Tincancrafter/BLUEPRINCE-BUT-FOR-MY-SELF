@@ -1,6 +1,7 @@
 *
 !.gitignore
 !README.md
+!LICENSE
 log.txt
 !blueprince.apworld
 !BluePrince.yaml

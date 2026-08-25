@@ -276,5 +276,4 @@ above.
 
 ## License
 
-See `blueprince-plugin/LISCENSE.md` for the project license and copyright
-information.
+This project is distributed under the [MIT License](LICENSE).
