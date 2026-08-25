@@ -10,7 +10,6 @@ This repository includes ready-to-use downloads for both sides of a game:
 | File | Use |
 | --- | --- |
 | `BluePrinceArchipelago-1.0.3.zip` | Install the BepInEx game plugin. Every player needs this. |
-| `blue-prince-host-bundle-fixed.zip` | Give to the host. Contains the AP world and a sample player YAML. |
 | `blueprince.apworld` | The custom Archipelago world, for hosts using an existing Archipelago install. |
 | `Players/BluePrince.yaml` | Player settings used to generate a seed. |
 
@@ -22,8 +21,8 @@ release together.
 
 ### Requirements
 
-- Blue Prince installed on a Windows PC through Steam or the Xbox app/launcher.
-    The Xbox console version is not supported by this PC BepInEx mod.
+- Blue Prince installed on a Windows PC through Steam. Console versions are not
+    supported by this PC BepInEx mod.
 - Windows 10 or newer.
 - BepInEx 6 IL2CPP, build `755` or a compatible newer setup.
 - A modded Blue Prince client is fine. You may keep other BepInEx plugins
@@ -134,13 +133,9 @@ The host needs an Archipelago installation that supports custom `.apworld`
 files. A normal Archipelago release or a hosting provider that explicitly
 allows custom worlds is required.
 
-1. Download `blue-prince-host-bundle-fixed.zip` and extract it into a temporary
-    folder. It contains:
-
-    ```text
-    blueprince.apworld
-    Players\BluePrince.yaml
-    ```
+1. Use the `blueprince.apworld` and `Players/BluePrince.yaml` files included in
+    this repository. If you downloaded a release archive, extract those two
+    files into a temporary folder first.
 
 2. Install the world by copying `blueprince.apworld` into the `custom_worlds`
     folder of the Archipelago installation. If the host uses a web service,
