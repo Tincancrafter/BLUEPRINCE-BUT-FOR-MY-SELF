@@ -14,7 +14,7 @@ Blue Prince:
   # Put drafted rooms into the item pool. Options: true or false.
   room_draft_sanity: true
 
-  # Number of random starting rooms when room_draft_sanity is true. Range: 2-10.
+  # Number of random starting rooms when room_draft_sanity is true. Range: 1-10.
   starting_room_amount: 2
 
   # Default locked-trunk checks per room by trunk type. Range for each: 0-100.
