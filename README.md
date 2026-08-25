@@ -6,6 +6,16 @@
 - [APWorld Source](https://github.com/Tincancrafter/Red-Prince-APWorld)
 - [Game Mod Source](https://github.com/Tincancrafter/Red-Prince-Game-Mod)
 
+## AI Assistance Disclosure
+
+[GitHub Copilot](https://github.com/features/copilot), an AI coding assistant,
+was used to help organize and expand this README, inspect the repository,
+draft installation and troubleshooting instructions, and validate the Git
+ignore configuration. The project authors remain responsible for reviewing,
+testing, and correcting all generated or suggested content. AI assistance does
+not replace credit for the human contributors or the upstream projects listed
+below.
+
 This project adds Archipelago randomizer support to the Steam version of Blue
 Prince. The game mod connects directly to an Archipelago server, sends checks
 when the player finds randomized rewards, and applies received rooms, items,
@@ -257,16 +267,6 @@ This project builds on or refers to the following software and resources:
 Links and software versions may change. The version details used for the
 current release are recorded in the
 [game-mod project file](https://github.com/Tincancrafter/Red-Prince-Game-Mod/blob/main/RedPrinceArchipelago/RedPrinceArchipelago.csproj).
-
-### AI Assistance Disclosure
-
-[GitHub Copilot](https://github.com/features/copilot), an AI coding assistant,
-was used to help organize and expand this README, inspect the repository,
-draft installation and troubleshooting instructions, and validate the Git
-ignore configuration. The project authors remain responsible for reviewing,
-testing, and correcting all generated or suggested content. AI assistance does
-not replace credit for the human contributors or the upstream projects listed
-above.
 
 ## License
 
