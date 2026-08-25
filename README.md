@@ -232,8 +232,6 @@ testing, tooling, packaging, or advice:
 - [shavnir](https://github.com/shavnir), for game-mod code, build tooling,
     item/list handling, and installation documentation.
 - [Rooby-Roo](https://github.com/Rooby-Roo), for documentation contributions.
-- [Tincancrafter](https://github.com/Tincancrafter), for release maintenance,
-    packaging, distribution documentation, and integration fixes.
 - ChaseoQueso, for the initial item code and custom Archipelago swirl asset.
 - Mac, for work on the mod and APWorld.
 - Zygan, for custom art assets.
